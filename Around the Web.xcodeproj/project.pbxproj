@@ -21,6 +21,11 @@
 		F3061C9C18A1C61E006ED93C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3061C7E18A1C61E006ED93C /* UIKit.framework */; };
 		F3061CA418A1C61E006ED93C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3061CA218A1C61E006ED93C /* InfoPlist.strings */; };
 		F3061CA618A1C61E006ED93C /* Around_the_WebTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3061CA518A1C61E006ED93C /* Around_the_WebTests.m */; };
+		F3061CB118A1C6F9006ED93C /* ATWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3061CB018A1C6F9006ED93C /* ATWHomeViewController.m */; };
+		F3061CB418A1C743006ED93C /* ATWWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3061CB318A1C743006ED93C /* ATWWebViewController.m */; };
+		F3061CB718A1C79F006ED93C /* ATWSplashScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3061CB618A1C79F006ED93C /* ATWSplashScreenViewController.m */; };
+		F3061CBA18A1C9CF006ED93C /* ATWSites.m in Sources */ = {isa = PBXBuildFile; fileRef = F3061CB918A1C9CF006ED93C /* ATWSites.m */; };
+		F3061CBC18A1CC2D006ED93C /* Sites.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3061CBB18A1CC2D006ED93C /* Sites.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,15 @@
 		F3061CA118A1C61E006ED93C /* Around the WebTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Around the WebTests-Info.plist"; sourceTree = "<group>"; };
 		F3061CA318A1C61E006ED93C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F3061CA518A1C61E006ED93C /* Around_the_WebTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Around_the_WebTests.m; sourceTree = "<group>"; };
+		F3061CAF18A1C6F9006ED93C /* ATWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATWHomeViewController.h; sourceTree = "<group>"; };
+		F3061CB018A1C6F9006ED93C /* ATWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATWHomeViewController.m; sourceTree = "<group>"; };
+		F3061CB218A1C743006ED93C /* ATWWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATWWebViewController.h; sourceTree = "<group>"; };
+		F3061CB318A1C743006ED93C /* ATWWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATWWebViewController.m; sourceTree = "<group>"; };
+		F3061CB518A1C79F006ED93C /* ATWSplashScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATWSplashScreenViewController.h; sourceTree = "<group>"; };
+		F3061CB618A1C79F006ED93C /* ATWSplashScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATWSplashScreenViewController.m; sourceTree = "<group>"; };
+		F3061CB818A1C9CF006ED93C /* ATWSites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATWSites.h; sourceTree = "<group>"; };
+		F3061CB918A1C9CF006ED93C /* ATWSites.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATWSites.m; sourceTree = "<group>"; };
+		F3061CBB18A1CC2D006ED93C /* Sites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Sites.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +129,14 @@
 				F3061C8918A1C61E006ED93C /* ATWAppDelegate.h */,
 				F3061C8A18A1C61E006ED93C /* ATWAppDelegate.m */,
 				F3061C8C18A1C61E006ED93C /* Main.storyboard */,
+				F3061CB818A1C9CF006ED93C /* ATWSites.h */,
+				F3061CB918A1C9CF006ED93C /* ATWSites.m */,
+				F3061CB518A1C79F006ED93C /* ATWSplashScreenViewController.h */,
+				F3061CB618A1C79F006ED93C /* ATWSplashScreenViewController.m */,
+				F3061CB218A1C743006ED93C /* ATWWebViewController.h */,
+				F3061CB318A1C743006ED93C /* ATWWebViewController.m */,
+				F3061CAF18A1C6F9006ED93C /* ATWHomeViewController.h */,
+				F3061CB018A1C6F9006ED93C /* ATWHomeViewController.m */,
 				F3061C8F18A1C61E006ED93C /* ATWViewController.h */,
 				F3061C9018A1C61E006ED93C /* ATWViewController.m */,
 				F3061C9218A1C61E006ED93C /* Images.xcassets */,
@@ -127,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				F3061C8218A1C61E006ED93C /* Around the Web-Info.plist */,
+				F3061CBB18A1CC2D006ED93C /* Sites.plist */,
 				F3061C8318A1C61E006ED93C /* InfoPlist.strings */,
 				F3061C8618A1C61E006ED93C /* main.m */,
 				F3061C8818A1C61E006ED93C /* Around the Web-Prefix.pch */,
@@ -230,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3061C9318A1C61E006ED93C /* Images.xcassets in Resources */,
+				F3061CBC18A1CC2D006ED93C /* Sites.plist in Resources */,
 				F3061C8518A1C61E006ED93C /* InfoPlist.strings in Resources */,
 				F3061C8E18A1C61E006ED93C /* Main.storyboard in Resources */,
 			);
@@ -252,6 +276,10 @@
 			files = (
 				F3061C9118A1C61E006ED93C /* ATWViewController.m in Sources */,
 				F3061C8718A1C61E006ED93C /* main.m in Sources */,
+				F3061CB718A1C79F006ED93C /* ATWSplashScreenViewController.m in Sources */,
+				F3061CB118A1C6F9006ED93C /* ATWHomeViewController.m in Sources */,
+				F3061CB418A1C743006ED93C /* ATWWebViewController.m in Sources */,
+				F3061CBA18A1C9CF006ED93C /* ATWSites.m in Sources */,
 				F3061C8B18A1C61E006ED93C /* ATWAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

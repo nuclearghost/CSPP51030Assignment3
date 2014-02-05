@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name0</key>
+	<string>Redditt</string>
+	<key>url0</key>
+	<string>http://reedditapp.com/</string>
+	<key>name5</key>
+	<string>ESPN</string>
+	<key>url5</key>
+	<string>http://www.espn.com</string>
+	<key>name4</key>
+	<string>Facebook</string>
+	<key>url4</key>
+	<string>http://www.facebook.com</string>
+	<key>name3</key>
+	<string>Twitter</string>
+	<key>url3</key>
+	<string>http://www.twitter.com</string>
+	<key>name2</key>
+	<string>Apple</string>
+	<key>url2</key>
+	<string>http://www.apple.com</string>
+	<key>name1</key>
+	<string>Google</string>
+	<key>url1</key>
+	<string>http://www.google.com</string>
+</dict>
+</plist>
