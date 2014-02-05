@@ -61,7 +61,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="RME-fO-7xy"/>
                     <connections>
-                        <segue destination="mES-mi-Mhz" kind="push" identifier="WebViewSegue" id="yAc-mq-4N7"/>
+                        <segue destination="mES-mi-Mhz" kind="push" identifier="segueWebView" id="yAc-mq-4N7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dyS-RC-EIM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -81,7 +81,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ByU-NY-Ako">
-                                <rect key="frame" x="0.0" y="65" width="320" height="458"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="523"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
@@ -89,17 +89,33 @@
                                 <rect key="frame" x="0.0" y="523" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Refresh" id="4og-qO-56y"/>
+                                    <barButtonItem title="Refresh" id="4og-qO-56y">
+                                        <connections>
+                                            <action selector="refreshTapped:" destination="mES-mi-Mhz" id="8AF-56-boT"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="OnS-XF-rX7"/>
-                                    <barButtonItem title="Back" id="9PM-j3-zuL"/>
+                                    <barButtonItem title="Back" id="9PM-j3-zuL">
+                                        <connections>
+                                            <action selector="backTapped:" destination="mES-mi-Mhz" id="a9Y-0k-y5u"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="WDb-zW-pSx"/>
-                                    <barButtonItem title="Forward" id="QUX-pL-D1l"/>
+                                    <barButtonItem title="Forward" id="QUX-pL-D1l">
+                                        <connections>
+                                            <action selector="forwardTapped:" destination="mES-mi-Mhz" id="gCO-N8-X0B"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="cK9-hP-Qvc"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="webView" destination="ByU-NY-Ako" id="60L-eE-RBj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DTp-Ow-DP5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

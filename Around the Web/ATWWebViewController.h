@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ATWSites.h"
 
 @interface ATWWebViewController : UIViewController
+
+@property (nonatomic, strong) ATWSites *site;
+
+
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+
+- (IBAction)refreshTapped:(UIBarButtonItem *)sender;
+- (IBAction)backTapped:(UIBarButtonItem *)sender;
+- (IBAction)forwardTapped:(UIBarButtonItem *)sender;
 
 @end
