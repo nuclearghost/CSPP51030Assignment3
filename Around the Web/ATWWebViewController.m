@@ -7,6 +7,7 @@
 //
 
 #import "ATWWebViewController.h"
+#import <Social/Social.h>
 
 @interface ATWWebViewController ()
 
@@ -28,6 +29,17 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)shareTapped:(id)sender {
+    SLComposeViewController *tweetSheet = [SLComposeViewController
+                                           composeViewControllerForServiceType:SLServiceTypeTwitter];
+    //Taken from Stack Overflow
+    //http://stackoverflow.com/questions/2491410/get-current-url-of-uiwebview
+    NSString *initTweet = [NSString stringWithFormat:@"%@", [self.webView stringByEvaluatingJavaScriptFromString:@"window.location"]];
+    [tweetSheet setInitialText:initTweet];
+    
+    [self presentViewController:tweetSheet animated:YES completion:nil];
 }
 
 - (IBAction)refreshTapped:(UIBarButtonItem *)sender {

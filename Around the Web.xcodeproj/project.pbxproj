@@ -26,6 +26,7 @@
 		F3061CB718A1C79F006ED93C /* ATWSplashScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3061CB618A1C79F006ED93C /* ATWSplashScreenViewController.m */; };
 		F3061CBA18A1C9CF006ED93C /* ATWSites.m in Sources */ = {isa = PBXBuildFile; fileRef = F3061CB918A1C9CF006ED93C /* ATWSites.m */; };
 		F3061CBC18A1CC2D006ED93C /* Sites.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3061CBB18A1CC2D006ED93C /* Sites.plist */; };
+		F3AC759818A6C889009F2CBD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3AC759718A6C889009F2CBD /* Social.framework */; };
 		F3DA18AF18A67B8700E5B2DC /* ATWCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DA18AE18A67B8700E5B2DC /* ATWCircleView.m */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		F3061CB818A1C9CF006ED93C /* ATWSites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATWSites.h; sourceTree = "<group>"; };
 		F3061CB918A1C9CF006ED93C /* ATWSites.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATWSites.m; sourceTree = "<group>"; };
 		F3061CBB18A1CC2D006ED93C /* Sites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Sites.plist; sourceTree = "<group>"; };
+		F3AC759718A6C889009F2CBD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		F3DA18AD18A67B8700E5B2DC /* ATWCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATWCircleView.h; sourceTree = "<group>"; };
 		F3DA18AE18A67B8700E5B2DC /* ATWCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATWCircleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3AC759818A6C889009F2CBD /* Social.framework in Frameworks */,
 				F3061C7D18A1C61E006ED93C /* CoreGraphics.framework in Frameworks */,
 				F3061C7F18A1C61E006ED93C /* UIKit.framework in Frameworks */,
 				F3061C7B18A1C61E006ED93C /* Foundation.framework in Frameworks */,
@@ -118,6 +121,7 @@
 		F3061C7918A1C61E006ED93C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3AC759718A6C889009F2CBD /* Social.framework */,
 				F3061C7A18A1C61E006ED93C /* Foundation.framework */,
 				F3061C7C18A1C61E006ED93C /* CoreGraphics.framework */,
 				F3061C7E18A1C61E006ED93C /* UIKit.framework */,

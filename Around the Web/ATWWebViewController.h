@@ -15,6 +15,7 @@
 
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
+- (IBAction)shareTapped:(id)sender;
 
 - (IBAction)refreshTapped:(UIBarButtonItem *)sender;
 - (IBAction)backTapped:(UIBarButtonItem *)sender;

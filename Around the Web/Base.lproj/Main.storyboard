@@ -111,7 +111,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cK9-hP-Qvc"/>
+                    <navigationItem key="navigationItem" id="cK9-hP-Qvc">
+                        <barButtonItem key="rightBarButtonItem" title="Share" id="Dfx-O8-sA9">
+                            <connections>
+                                <action selector="shareTapped:" destination="mES-mi-Mhz" id="IkE-7T-aoM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="webView" destination="ByU-NY-Ako" id="60L-eE-RBj"/>
