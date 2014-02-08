@@ -10,4 +10,6 @@
 
 @interface ATWSplashScreenViewController : UIViewController
 
+- (void)dismiss;
+
 @end

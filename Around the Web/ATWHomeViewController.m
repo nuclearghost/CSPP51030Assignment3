@@ -17,7 +17,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    ATWSplashScreenViewController *vc = [[self storyboard] instantiateViewControllerWithIdentifier:@"SplashScreenViewController"];
+    
+    [self presentViewController:vc animated:NO completion: nil];
+    
+    CGRect bounds = [self.view bounds];
+    CGRect  viewRect = CGRectMake(0, 100, bounds.size.width, bounds.size.height/3);
+    ATWCircleView *circleView =[[ATWCircleView alloc] initWithFrame:viewRect];
+    [self.view addSubview:circleView];
+    
+    [self initURLs];
 
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (void)initURLs
+{
     self.sites = [[NSMutableArray alloc] initWithCapacity:6];
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Sites" ofType:@"plist"];
@@ -45,32 +66,19 @@
     }
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (void)urlTapped:(id)sender{
-    NSLog(@"Url tapped");
-    
     [self performSegueWithIdentifier:@"segueWebView" sender:sender];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Cast the parameter "sender" to a UIButton
     UIButton *button = (UIButton*)sender;
     
     ATWSites *site = [self.sites objectAtIndex:button.tag];
     
-    // Test for the segue we expect; useful if you have different segue possible
     if ([segue.identifier isEqualToString:@"segueWebView"]) {
         
-        // Get a pointer to the view controller that will be appear
         ATWWebViewController *wvc = (ATWWebViewController*)segue.destinationViewController;
-        
-        // Set the animal view controller's animal property to the current animala
         wvc.site = site;
     }
 }

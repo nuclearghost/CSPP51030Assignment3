@@ -14,25 +14,25 @@
 
 @implementation ATWSplashScreenViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    SEL sel = NSSelectorFromString(@"dismiss");
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:sel userInfo:nil repeats:NO];
+    NSLog(@"%@", timer.fireDate);
+    self.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+                      
+- (void)dismiss
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

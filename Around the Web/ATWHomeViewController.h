@@ -9,11 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "ATWSites.h"
 #import "ATWWebViewController.h"
+#import "ATWCircleView.h"
+#import "ATWSplashScreenViewController.h"
 
 @interface ATWHomeViewController : UIViewController
 
 @property (nonatomic, strong) NSMutableArray *sites;
 
 - (void)urlTapped:(id)sender;
+- (void)initURLs;
 
 @end
